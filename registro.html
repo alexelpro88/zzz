@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <nav class="menu">
+    <div class="menu-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <ul>
+      <li><a href="index.html">Pagina Principal</a></li>
+      <li class="right"><a href="inicio_de_sesion.html">Inicio de Sesión</a></li>
+    </ul>
+  </nav>
+
+<div class="registration-container">
+  <h1>Registro</h1>
+  <form id="registrationForm">
+    <label for="firstName">Nombre:</label>
+    <input type="text" id="name1" name="firstName" placeholder="Ingresa tu nombre" required>
+    
+    <label for="lastName">Apellido:</label>
+    <input type="text" id="name2" name="lastName" placeholder="Ingresa tu apellido" required>
+    
+    <label for="dob">Fecha de Nacimiento:</label>
+    <input type="text" id="year" name="lastName" placeholder="dia" required>
+    <input type="text" id="moth" name="lastName" placeholder="mes" required>
+    <input type="text" id="day" name="lastName" placeholder="año" required>
+    
+    <button type="button" onclick="generateEmail()">Registrarse</button>
+</form>
+
+<script src="assets/js/script4.js"></script>
+</body>
+</html>
